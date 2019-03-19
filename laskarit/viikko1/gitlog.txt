@@ -1,0 +1,105 @@
+commit 5768cc0c34687fdcb32e518ac3154c84b13d9b0c
+Author: Salmi Tiera V E <tiera@dx5-cs-bk107-40.ad.helsinki.fi>
+Date:   Tue Mar 19 18:49:20 2019 +0200
+
+    harjoittelua
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 502c8bb54973ddb63aec12c8eacd5b5223cc2264
+Author: Salmi Tiera V E <tiera@dx5-cs-bk107-40.ad.helsinki.fi>
+Date:   Tue Mar 19 18:46:05 2019 +0200
+
+    messagee
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 28a33ebb386dc46cccf7f5f645e0fd47228b37c8
+Author: Salmi Tiera V E <tiera@dx5-cs-bk107-40.ad.helsinki.fi>
+Date:   Tue Mar 19 18:39:27 2019 +0200
+
+    just another commit
+
+ eka.txt    | 7 +------
+ kolmas.txt | 4 ++++
+ 2 files changed, 5 insertions(+), 6 deletions(-)
+
+commit 4880cfa832efd4ee15e4ef7a4cfc940e18160aae
+Author: Salmi Tiera V E <tiera@dx5-cs-bk107-40.ad.helsinki.fi>
+Date:   Tue Mar 19 18:35:18 2019 +0200
+
+    tiedosto renameded
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 9e39503fef0c862437153d5520039f2d69293162
+Author: Salmi Tiera V E <tiera@dx5-cs-bk107-40.ad.helsinki.fi>
+Date:   Tue Mar 19 18:33:38 2019 +0200
+
+    toinen delet
+
+ toinen.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit babee5869e7a0d941dcf2f223b1ff5bd9f1cd8b5
+Author: Salmi Tiera V E <tiera@dx5-cs-bk107-40.ad.helsinki.fi>
+Date:   Tue Mar 19 18:30:55 2019 +0200
+
+    canged important text
+
+ tiedosto.txt | 29 +----------------------------
+ 1 file changed, 1 insertion(+), 28 deletions(-)
+
+commit d763f5ded18ca144136d431138c59ae7010775d8
+Author: Salmi Tiera V E <tiera@dx5-cs-bk107-40.ad.helsinki.fi>
+Date:   Tue Mar 19 18:27:50 2019 +0200
+
+    important text actually added
+
+ tiedosto.txt | 1520 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 1520 insertions(+)
+
+commit 5eea090436575a8b9b91ccd6886d7c496fbf91f4
+Author: Salmi Tiera V E <tiera@melkki.cs.helsinki.fi>
+Date:   Tue Mar 19 18:02:38 2019 +0200
+
+    stuffin commit
+
+ stuff/sisalto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit faa8b66f923b062cf7a3a426ef723b120ee44a8a
+Author: Salmi Tiera V E <tiera@melkki.cs.helsinki.fi>
+Date:   Tue Mar 19 18:01:36 2019 +0200
+
+    kolmas commit
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit f1b0db62671220297d4d6da37012b3eb3cc8dc9a
+Author: Salmi Tiera V E <tiera@melkki.cs.helsinki.fi>
+Date:   Tue Mar 19 17:58:31 2019 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 368005eb544e2de0b3b82094dd83be74796a7150
+Author: Salmi Tiera V E <tiera@melkki.cs.helsinki.fi>
+Date:   Tue Mar 19 17:45:28 2019 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+
