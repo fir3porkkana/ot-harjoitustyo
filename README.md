@@ -1,7 +1,9 @@
-#Otsikko
+# Ohjelmistotekniikka, harjoitustyö
 
-kevin ei osaa ajaa pyörää
+### Tehtävät
 
-*kun mehujää lutkuu, kaikki hetkuu*
+#### Viikko 1
 
-**totta kuin potta**
+*[gitlog.txt](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)*
+
+*[komentorivi.txt](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)*
