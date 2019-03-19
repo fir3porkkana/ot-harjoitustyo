@@ -9,3 +9,5 @@
 *[komentorivi.txt](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)*
 
 jokin muutos tehtävää varten
+uusi muutos
+
