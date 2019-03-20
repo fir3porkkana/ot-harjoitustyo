@@ -11,3 +11,7 @@
 jokin muutos tehtävää varten
 uusi muutosboi
 
+#### Viikko 2
+
+[vaatimusmäärittely](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/dokumentointi/vaatimusmaarittely.txt)
+
