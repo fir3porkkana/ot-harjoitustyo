@@ -17,7 +17,7 @@ sekä jonkinnäköinen kirjanpito high-scoreista.
 
 * ilmoitus hävitystä pelistä
 
-*pisteytys voitetulle pelille
+* pisteytys voitetulle pelille
 
-*high-scorejen tallettaminen yksinkertaiseen tietokantaan
+* high-scorejen tallettaminen yksinkertaiseen tietokantaan
 
