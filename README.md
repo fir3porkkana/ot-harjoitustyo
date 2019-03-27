@@ -13,7 +13,7 @@ uusi muutosboi
 
 #### Viikko 2
 
-[vaatimusmäärittely](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/dokumentointi/vaatimusmaarittely.txt)
+[vaatimusmäärittely](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/dokumentointi/vaatimusmaarittely.md)
 
 [tyhmän maksukortin testit](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/laskarit/viikko2/Maksukortti/test/MaksukorttiTest.java)
 
