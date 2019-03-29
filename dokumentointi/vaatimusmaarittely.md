@@ -17,7 +17,7 @@ miinaharava itsessään, eli pelin perustoiminnallisuus:
 
 * miinallista ruutua painettaessa peli hävitään, miinatonta ruutua painettaessa numero tulee näkyviin
 
-suurempaa miinatonta aluetta painettaessa kaikki sen ruudut paljastetaan automaattisesti siten, että aluetta reunustaa numerolliset ruudut
+* suurempaa miinatonta aluetta painettaessa kaikki sen ruudut paljastetaan automaattisesti siten, että aluetta reunustaa numerolliset ruudut
 
 * kun kaikki miinat on merkittynä, eikä yksikään ruutu ole peitossa, peli voitetaan
 
