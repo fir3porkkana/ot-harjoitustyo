@@ -21,3 +21,6 @@ uusi muutosboi
 
 [testikattavuus-screenshot](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/laskarit/viikko2/testikattavuus_teht7.png)
 
+#### Viikko3
+
+https://yuml.me/diagram/boring/class/draw
