@@ -22,7 +22,7 @@ public class Main implements Runnable {
         while (true) {
             try {
                 gui.repaint();
-                Thread.sleep(20);
+                Thread.sleep(32);
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
