@@ -10,15 +10,19 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import src.Logic;
 
 /**
  *
  * @author tiera
  */
-public class IkkunanTestit {
+public class LogicTest {
     
-    public IkkunanTestit() {
-        
+    @Test
+    public void tauluSisaltaaMiinan() {
+        Logic l = new Logic();
+        int miinaruudunArvo = l.getTaulu()[1][1];
+        assertEquals(100, miinaruudunArvo);
     }
     
     @BeforeClass
@@ -36,5 +40,10 @@ public class IkkunanTestit {
     @After
     public void tearDown() {
     }
-    
+
+    // TODO add test methods here.
+    // The methods must be annotated with annotation @Test. For example:
+    //
+    // @Test
+    // public void hello() {}
 }

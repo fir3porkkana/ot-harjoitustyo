@@ -9,6 +9,8 @@ sekä jonkinnäköinen kirjanpito high-scoreista.
 
 miinaharava itsessään, eli pelin perustoiminnallisuus:
 
+* peli aloitettaessa avautuu ikkuna, johon seuraavat asiat sitten toteutetaan
+
 * aloitusruutu, jossa näkyy itse pelikenttä
 
 * kentällä on ruutuja, joissa on joko miina tai numero, joka kertoo kuinka monessa ruudun naapureista on miina
