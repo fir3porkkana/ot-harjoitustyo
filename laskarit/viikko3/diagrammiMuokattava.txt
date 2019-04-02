@@ -1,0 +1,31 @@
+title moottorin käynnistyskaavio
+jokuMetodi->+Machine: machine()
+Machine->FuelTank: FuelTank()
+note right of FuelTank: tankki luodaan
+FuelTank -->- Machine: tank
+
+Machine->FuelTank: tank.fill(40)
+note right of FuelTank: tankkia täytetään
+FuelTank -->- Machine: void
+
+Machine->Engine: Engine(tank)
+note right of Engine: moottori luodaan
+Engine -->- Machine: engine
+
+note right of Machine: machine luotu
+Machine->-jokuMetodi: machine
+
+jokuMetodi->+Machine: machine.drive()
+Machine->+Engine: start()
+Engine->FuelTank: consume(5)
+
+Machine->Engine: running()
+note right of Engine: moottorin käynnistys
+Engine-->Machine: running (boolean)
+
+Machine->+Engine: engine.useEnergy()
+note right of Engine: if (running)
+Engine->FuelTank: consume(10)
+Engine->FuelTank: consume(10)
+Engine->FuelTank: consume(10)
+Engine->-Machine: engine.useEnergy()
