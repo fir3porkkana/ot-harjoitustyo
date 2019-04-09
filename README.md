@@ -8,4 +8,4 @@
 
 [raportin luominen jacocolla toimii, pluginin sisältävä POM.xml täällä](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/Miinaharava/pom.xml)
 
-[tuntikirjanpito](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/dokumentointi/tuntikirjanpito.md)
+[tuntikirjanpito](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
