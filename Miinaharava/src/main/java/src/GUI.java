@@ -74,29 +74,6 @@ public class GUI extends JFrame {
 
     }
 
-    public class Click implements MouseListener {
-
-        @Override
-        public void mouseClicked(MouseEvent me) {
-            System.out.println("mouse was clicked");
-        }
-
-        @Override
-        public void mousePressed(MouseEvent me) {
-        }
-
-        @Override
-        public void mouseReleased(MouseEvent me) {
-        }
-
-        @Override
-        public void mouseEntered(MouseEvent me) {
-        }
-
-        @Override
-        public void mouseExited(MouseEvent me) {
-        }
-
-    }
+    
 
 }
