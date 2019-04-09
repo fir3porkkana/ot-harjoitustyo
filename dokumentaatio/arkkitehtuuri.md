@@ -1,1 +1,1 @@
-![kaavio](dokumentaatio/alustavaLuokkakaavio.png)
+![kaavio](/dokumentaatio/alustavaLuokkakaavio.png)
