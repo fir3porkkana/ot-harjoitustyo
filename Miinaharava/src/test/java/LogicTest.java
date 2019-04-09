@@ -21,7 +21,7 @@ public class LogicTest {
     @Test
     public void tauluSisaltaaMiinan() {
         Logic l = new Logic();
-        int miinaruudunArvo = l.getTaulu()[1][1];
+        int miinaruudunArvo = l.getMines()[1][1];
         assertEquals(100, miinaruudunArvo);
     }
     

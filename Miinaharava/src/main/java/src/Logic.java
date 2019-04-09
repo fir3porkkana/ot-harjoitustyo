@@ -5,20 +5,27 @@
  */
 package src;
 
+import java.util.Random;
+
 /**
  *
  * @author tiera
  */
 public class Logic {
-    private int[][] taulu;
+    private int[][] mines;
+    private int[][] neighbours;
+    private boolean[][] revealed;
+    private boolean[][] flagged;
+    
+    Random rand = new Random();
     
     public Logic() {
-        taulu = new int[2][2];
-        taulu[1][1] = 100;
+        mines = new int[2][2];
+        mines[1][1] = 100;
     }
 
-    public int[][] getTaulu() {
-        return taulu;
+    public int[][] getMines() {
+        return mines;
     }
     
     
