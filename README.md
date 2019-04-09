@@ -6,4 +6,6 @@
 
 [testejä](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/Miinaharava/src/test/java/LogicTest.java)
 
+[arkkitehtuuri](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+
 [tuntikirjanpito](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
