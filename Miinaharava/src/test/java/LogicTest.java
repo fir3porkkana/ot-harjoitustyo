@@ -10,8 +10,8 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import src.Logic;
-import src.Click;
+import AppLogic.Logic;
+import AppLogic.Click;
 
 /**
  *
@@ -22,8 +22,20 @@ public class LogicTest {
     @Test
     public void tauluSisaltaaMiinan() {
         Logic l = new Logic();
-        int miinaruudunArvo = l.getMines()[1][1];
-        assertEquals(100, miinaruudunArvo);
+        boolean onkoMiina = false;
+        int[][] miinaruudunArvo = l.getMines();
+        
+        for (int i = 0; i < 16; i++) {
+            for (int j = 0; j < 9; j++) {
+                int ruutu = miinaruudunArvo[i][j];
+                if (ruutu == 1) {
+                    onkoMiina = true;
+                }
+            }
+            
+        }
+        
+        assertTrue(onkoMiina);
     }
     
     @BeforeClass
