@@ -7,4 +7,7 @@ päivä | aika | mitä tein
 2.4 | 4 | gui, testausta
 9.4 | 5 | laudan reagointi, arkkitehtuurikuva
 16.4 | 7 | sovelluslogiikkaa
+22.4 | 2 | sovelluslogiikkaa
+23.4 | 1 | sovelluslogiikkaa
+24.4 | 2 | sovelluslogiikkaa
 yhteensä | 19.5 |
