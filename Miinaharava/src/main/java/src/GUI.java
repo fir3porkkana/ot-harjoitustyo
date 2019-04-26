@@ -162,7 +162,6 @@ public class GUI extends JFrame {
 
             if (me.getButton() == MouseEvent.BUTTON3 && x != -1 && y != -1 && !l.getRevealed()[x][y]) {
                 l.setBoxFlagged(x, y);
-                System.out.println(l.getFlagged()[x][y]);
             }
 
 //            if (x != -1 && y != -1) {

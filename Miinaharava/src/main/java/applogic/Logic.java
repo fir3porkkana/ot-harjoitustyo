@@ -83,7 +83,6 @@ public class Logic {
     }
 
     public boolean isVictory() {
-        
         return victory;
     }
 
@@ -106,7 +105,7 @@ public class Logic {
     public void setBoxRevealed(int x, int y) {
         syvyyshaku(x, y);
     }
-    
+
     public void setBoxFlagged(int x, int y) {
         flagged[x][y] = !flagged[x][y];
     }
