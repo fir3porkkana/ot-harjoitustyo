@@ -1,6 +1,6 @@
 # Käyttöohje
 
-Lataa tiedosto [Miinaharava.jar](https://www.google.com/)
+Lataa tiedosto [Miinaharava.jar](https://github.com/fir3porkkana/ot-harjoitustyo/releases/tag/1.01)
 
 ## Ohjelman käynnistäminen
 
