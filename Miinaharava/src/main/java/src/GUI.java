@@ -5,8 +5,8 @@
  */
 package src;
 
-import AppLogic.Click;
-import AppLogic.Logic;
+import applogic.Click;
+import applogic.Logic;
 import javax.swing.*;
 import java.util.*;
 import java.awt.*;
@@ -165,15 +165,14 @@ public class GUI extends JFrame {
                 System.out.println(l.getFlagged()[x][y]);
             }
 
-            if (x != -1 && y != -1) {
-                System.out.println("the mouse is in a box [" + x + "][" + y + "]");
-                System.out.println("number of mine neighbours this box has is: " + l.getNeighbours()[x][y]);
-            }
+//            if (x != -1 && y != -1) {
+//                System.out.println("the mouse is in a box [" + x + "][" + y + "]");
+//                System.out.println("number of mine neighbours this box has is: " + l.getNeighbours()[x][y]);
+//            }
         }
 
         @Override
         public void mousePressed(MouseEvent me) {
-
         }
 
         @Override
@@ -199,10 +198,8 @@ public class GUI extends JFrame {
 
         @Override
         public void mouseMoved(MouseEvent me) {
-//            System.out.println("mouse was moved");
             mx = me.getX();
             my = me.getY();
-//            System.out.println("x: " + mx + " ,y: " + my);
         }
 
     }

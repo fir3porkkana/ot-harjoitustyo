@@ -10,8 +10,8 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import AppLogic.Logic;
-import AppLogic.Click;
+import applogic.Logic;
+import applogic.Click;
 
 /**
  *

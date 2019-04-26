@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package AppLogic;
+package applogic;
 
 import java.util.Date;
 import java.util.Random;
@@ -83,6 +83,7 @@ public class Logic {
     }
 
     public boolean isVictory() {
+        
         return victory;
     }
 
