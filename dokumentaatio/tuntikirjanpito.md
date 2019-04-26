@@ -11,4 +11,4 @@ päivä | aika | mitä tein
 23.4 | 1 | sovelluslogiikkaa
 24.4 | 2 | sovelluslogiikkaa
 26.4 | 3 | käyttöohje, readme
-yhteensä | 24.5 |
+yhteensä | 27.5 |
