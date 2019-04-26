@@ -21,6 +21,14 @@ public class GUI extends JFrame {
     public int mx = -10;
     public int my = -10;
 
+    public int smileyX = 439;
+    public int smileyY = 25;
+
+    public int timerX = 820;
+    public int timerY = 25;
+
+    public long secs = 0;
+
     public Logic l;
 
     public GUI() {
@@ -49,9 +57,7 @@ public class GUI extends JFrame {
             for (int i = 0; i < 16; i++) {
                 for (int j = 0; j < 9; j++) {
                     g.setColor(Color.MAGENTA);
-                    if (l.getMines()[i][j] == 1) {
-                        g.setColor(Color.WHITE);
-                    }
+
                     if (l.getRevealed()[i][j]) {
                         g.setColor(Color.LIGHT_GRAY);
                         if (l.getMines()[i][j] == 1) {
@@ -67,21 +73,45 @@ public class GUI extends JFrame {
                     }
                     g.fillRect(3 * spacing + i * 56, spacing + j * 56 + 32, 56 - 2 * spacing, 56 - 2 * spacing);
 
-                    if (l.getRevealed()[i][j]) {
+                    if (l.getRevealed()[i][j] && l.getNeighbours()[i][j] != 0) {
                         g.setColor(Color.BLACK);
                         if (l.getMines()[i][j] == 0) {
                             g.setColor(Color.BLACK);
                             g.setFont(new Font("Tahoma", Font.BOLD, 30));
                             g.drawString("" + l.getNeighbours()[i][j], i * 56 + 3 * spacing + 13, j * 56 + 56 + 16);
-                        } else {
+                        } else if (l.getMines()[i][j] == 1) {
                             g.fillRect(i * 56 + 10 + 16, j * 56 + 56 - 16, 20, 40);
                             g.fillRect(i * 56 + 16, j * 56 + 56 + 10 - 16, 40, 20);
                             g.fillRect(i * 56 + 5 + 16, j * 56 + 56 + 5 - 16, 30, 30);
                         }
-                        
+                    }
+
+                    if (l.getFlagged()[i][j]) {
+                        g.setColor(Color.BLACK);
+                        g.fillRect(i * 56 + 10 + 16, j * 56 + 56 - 16, 3, 40);
+                        g.setColor(Color.WHITE);
+                        g.fillRect(i * 56 + 10 + 16 + 3, j * 56 + 56 - 16, 18, 12);
                     }
                 }
             }
+
+            g.setColor(Color.cyan);
+            g.fillRect(smileyX, 0, 35, 35);
+            g.setColor(Color.BLACK);
+            g.setFont(new Font("Arial", Font.PLAIN, 20));
+            if ((smileyX <= mx && mx <= smileyX + 35) && (smileyY <= my && my <= 65)) {
+                g.drawString(":o", smileyX + 6, smileyY);
+            } else {
+                g.drawString("xd", smileyX + 7, smileyY);
+            }
+
+            if (!(l.isDefeat() || l.isVictory())) {
+                secs = (new Date().getTime() - l.getstartingTime().getTime()) / 1000;
+            }
+
+            g.setColor(Color.WHITE);
+            g.drawString("" + secs, timerX, timerY);
+
         }
     }
 
@@ -119,19 +149,31 @@ public class GUI extends JFrame {
 
         @Override
         public void mouseClicked(MouseEvent me) {
+            int x = inBoxX();
+            int y = inBoxY();
 
-            if (inBoxX() != -1 && inBoxY() != -1) {
+            if ((smileyX <= mx && mx <= smileyX + 35) && (smileyY <= my && my <= 65)) {
+                l = new Logic();
+            }
+
+            if (me.getButton() == MouseEvent.BUTTON1 && x != -1 && y != -1 && !l.getFlagged()[x][y]) {
                 l.setBoxRevealed(inBoxX(), inBoxY());
             }
 
-            if (inBoxX() != -1 && inBoxY() != -1) {
-                System.out.println("the mouse is in a box [" + inBoxX() + "][" + inBoxY() + "]");
-                System.out.println("number of mine neighbours this box has is: " + l.getNeighbours()[inBoxX()][inBoxY()]);
+            if (me.getButton() == MouseEvent.BUTTON3 && x != -1 && y != -1 && !l.getRevealed()[x][y]) {
+                l.setBoxFlagged(x, y);
+                System.out.println(l.getFlagged()[x][y]);
+            }
+
+            if (x != -1 && y != -1) {
+                System.out.println("the mouse is in a box [" + x + "][" + y + "]");
+                System.out.println("number of mine neighbours this box has is: " + l.getNeighbours()[x][y]);
             }
         }
 
         @Override
         public void mousePressed(MouseEvent me) {
+
         }
 
         @Override
