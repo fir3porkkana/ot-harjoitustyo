@@ -7,6 +7,8 @@ Miinaharava on klassinen peli, jossa tarkoituksena on annetun informaation perus
 
 [testejä](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/Miinaharava/src/test/java/LogicTest.java)
 
+[käyttöohje](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
+
 [arkkitehtuuri](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
 [tuntikirjanpito](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
