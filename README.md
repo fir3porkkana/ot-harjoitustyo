@@ -1,8 +1,7 @@
-# Ohjelmistotekniikka, harjoitustyö
+# Miinaharava
+Miinaharava on klassinen peli, jossa tarkoituksena on annetun informaation perusteella päätella laudalla olevien miinojen sijainti. Käyttäjä voittaa pelin, kun kaikki miinat on merkitty ja loput ruudut on paljastettu. Häviö tulee, jos pelaaja erehtyy painamaan ruutua, jossa on miina.
 
-#### Projekti
-
-[viikon 5 release](https://github.com/fir3porkkana/ot-harjoitustyo/releases/tag/viikko5)
+#### Dokumentaatio
  
 [suoritettavissa oleva mainin koodi](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/Miinaharava/src/main/java/src/Main.java)
 
@@ -11,3 +10,32 @@
 [arkkitehtuuri](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
 [tuntikirjanpito](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+
+### Releaset
+
+[viikko 5](https://github.com/fir3porkkana/ot-harjoitustyo/releases/tag/viikko5)
+
+
+### Komentorivitoiminnot
+
+#### Testaus 
+
+Testit saa suoritettua komennolla
+`mvn test`
+Testikattavuusraportin luominen tapahtuu komennolla
+`mvn jacoco:report`
+
+Kattavuusraporttia voi tarkastella avaamalla selaimella tiedosto target/site/jacoco/index.html
+
+
+### Suoritettavan jarin generointi
+
+Komennolla
+`mvn package`
+voi generoida target-hakemistoon jar-tiedoston nimeltä Miinaharava-1.0-SNAPSHOT.jar.
+
+### Checkstyle
+
+Checkstyle -tarkistukset [(määritelty tässä tiedostossa)](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/Miinaharava/checkstyle.xml) suoritetaan komennolla 
+`mvn jxr:jxr checkstyle:checkstyle`
+Terminaalissa näkyy alustava virheraportti, ja itse virheitä pääsee tarkastelemaan avaamalla selaimella tiedosto target/site/checkstyle.html
