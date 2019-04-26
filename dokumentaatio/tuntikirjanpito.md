@@ -10,4 +10,4 @@ päivä | aika | mitä tein
 22.4 | 2 | sovelluslogiikkaa
 23.4 | 1 | sovelluslogiikkaa
 24.4 | 2 | sovelluslogiikkaa
-yhteensä | 19.5 |
+yhteensä | 24.5 |
