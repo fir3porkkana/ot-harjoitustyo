@@ -37,7 +37,7 @@ public class GUI extends JFrame {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);
         this.setResizable(false);
-        this.l = new Logic(2, 2);
+        this.l = new Logic();
 
         Board board = new Board();
         this.setContentPane(board);

@@ -69,7 +69,7 @@ public class LogicTest {
     }
     
     @Test
-    public void flagaaminenToimii() {
+    public void flagaaminenToimiiOikein() {
         Logic l = new Logic();
         l.setBoxRevealed(0, 0);
         Random r = new Random();
@@ -90,7 +90,7 @@ public class LogicTest {
             }
             
         }
-        
+        assertEquals(1, l.getTotalFlagged());
         assertTrue(onnistui);
     }
     

@@ -146,7 +146,7 @@ public class Logic {
             isFirstClick = false;
             for (int i = 0; i < 16; i++) {
                 for (int j = 0; j < 9; j++) {
-                    if (rand.nextInt(101) <= 1 && (Math.abs(x - i) >= 2 || Math.abs(j - y) >= 2)) {
+                    if (rand.nextInt(101) <= 30 && (Math.abs(x - i) >= 2 || Math.abs(j - y) >= 2)) {
                         mines[i][j] = 1;
                         totalMines++;
                     }
