@@ -4,7 +4,17 @@ Ohjelman testaus on suoritettu automaattisilla yksikkö- ja integraatiotesteill�
 
 ## Yksikkö- ja integraatiotestit
 
+### Sovelluslogiikka
+
 Automaattisen testauksen pääosan muodostavat integraatiotestit, jotka testaavat pakkauksen [applogic](https://github.com/fir3porkkana/ot-harjoitustyo/tree/master/Miinaharava/src/main/java/applogic) luokan Logic määrittelemää sovelluslogiikkaa.
+
+Loppu toiminnallisuudesta on käyttöliittymässä (GUI), joka koostuu lähinnä gettereistä ja settereistä.
+
+### Testauskattavuus
+
+Käyttöliittymä pois lukien sovelluslogiikan testikattavuus on rivien osalta 92%, ja vastaavasti haarautumakattavuus on 98%.
+
+![testauskattavuus](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/dokumentaatio/Screenshot%20at%2021-54-43.png)
 
 
 ## Järjestelmätestaus
