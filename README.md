@@ -19,6 +19,8 @@ Miinaharava on klassinen peli, jossa tarkoituksena on annetun informaation perus
 
 [viikko 6](https://github.com/fir3porkkana/ot-harjoitustyo/releases/tag/1.01)
 
+[loppupalautus](https://github.com/fir3porkkana/ot-harjoitustyo/releases/tag/1.02)
+
 
 ### Komentorivitoiminnot
 
