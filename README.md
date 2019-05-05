@@ -1,7 +1,7 @@
 # Miinaharava
 Miinaharava on klassinen peli, jossa tarkoituksena on annetun informaation perusteella päätella laudalla olevien miinojen sijainti. Käyttäjä voittaa pelin, kun kaikki miinat on merkitty ja loput ruudut on paljastettu. Häviö tulee, jos pelaaja erehtyy painamaan ruutua, jossa on miina.
 
-#### Dokumentaatio
+## Dokumentaatio
 
 **[viimeisin release - loppupalautus](https://github.com/fir3porkkana/ot-harjoitustyo/releases/tag/1.02)**
 
@@ -13,7 +13,7 @@ Miinaharava on klassinen peli, jossa tarkoituksena on annetun informaation perus
 
 [tuntikirjanpito](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
-### Releaset
+## Releaset
 
 [viikko 5](https://github.com/fir3porkkana/ot-harjoitustyo/releases/tag/viikko5)
 
@@ -22,9 +22,9 @@ Miinaharava on klassinen peli, jossa tarkoituksena on annetun informaation perus
 [loppupalautus](https://github.com/fir3porkkana/ot-harjoitustyo/releases/tag/1.02)
 
 
-### Komentorivitoiminnot
+## Komentorivitoiminnot
 
-#### Testaus 
+### Testaus 
 
 Testit saa suoritettua komennolla
 `mvn test`
