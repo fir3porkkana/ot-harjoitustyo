@@ -14,4 +14,5 @@ päivä | aika | mitä tein
 30.4 | 2 | sovelluslogiikka
 2.5 | 2.5 | javadocceja
 4.5 | 2 | testausta
-yhteensä | 32 |
+5.5 | 6 | testausta, vaatimusmäärittely, arkkitehtuurikuvaus, testausdokumentti
+yhteensä | 38 |
