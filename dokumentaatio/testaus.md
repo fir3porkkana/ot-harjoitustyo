@@ -17,4 +17,4 @@ Sovellus on haettu ja sitä on testattu manuaalisesti [käyttöohjeen](https://g
 
 ### Toiminnallisuudet
 
-[Määrittelydokumentin] ja käyttöohjeen listaama toiminnallisuus on käyty läpi manuaalisesti, niin voittoon kuin häviöönkin johtavat skenaariot.
+[Määrittelydokumentin](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md) ja [käyttöohjeen](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md) listaama toiminnallisuus on käyty läpi manuaalisesti, niin voittoon kuin häviöönkin johtavat skenaariot.
