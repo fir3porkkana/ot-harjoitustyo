@@ -37,7 +37,7 @@ public class GUI extends JFrame {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);
         this.setResizable(false);
-        this.l = new Logic();
+        this.l = new Logic(2, 2);
 
         Board board = new Board();
         this.setContentPane(board);
@@ -51,50 +51,64 @@ public class GUI extends JFrame {
 
     public class Board extends JPanel {
 
+        /**
+         * Paints the game and its UI.
+         */
         public void paintComponent(Graphics g) {
             g.setColor(Color.DARK_GRAY);
             g.fillRect(0, 0, 920, 590);
-            for (int i = 0; i < 16; i++) {
-                for (int j = 0; j < 9; j++) {
-                    g.setColor(Color.MAGENTA);
+            if (!l.isDefeat() && !l.isVictory()) {
+                for (int i = 0; i < 16; i++) {
+                    for (int j = 0; j < 9; j++) {
+                        g.setColor(Color.MAGENTA);
 
-                    if (l.getRevealed()[i][j]) {
-                        g.setColor(Color.LIGHT_GRAY);
-                        if (l.getMines()[i][j] == 1) {
-                            g.setColor(Color.RED);
+                        if (l.getRevealed()[i][j]) {
+                            g.setColor(Color.LIGHT_GRAY);
+                            if (l.getMines()[i][j] == 1) {
+                                g.setColor(Color.RED);
+                            }
                         }
-                    }
-                    int botX = i * 56 + 3 * spacing;
-                    int topX = i * 56 + 56 + spacing;
-                    int botY = j * 56 + 56 + 3 * spacing;
-                    int topY = j * 56 + 56 * 2 + spacing;
-                    if (mx >= botX && mx <= topX && my >= botY && my <= topY) {
-                        g.setColor(Color.CYAN);
-                    }
-                    g.fillRect(3 * spacing + i * 56, spacing + j * 56 + 32, 56 - 2 * spacing, 56 - 2 * spacing);
+                        int botX = i * 56 + 3 * spacing;
+                        int topX = i * 56 + 56 + spacing;
+                        int botY = j * 56 + 56 + 3 * spacing;
+                        int topY = j * 56 + 56 * 2 + spacing;
+                        if (mx >= botX && mx <= topX && my >= botY && my <= topY) {
+                            g.setColor(Color.CYAN);
+                        }
+                        g.fillRect(3 * spacing + i * 56, spacing + j * 56 + 32, 56 - 2 * spacing, 56 - 2 * spacing);
 
-                    if (l.getRevealed()[i][j] && l.getNeighbours()[i][j] != 0) {
-                        g.setColor(Color.BLACK);
-                        if (l.getMines()[i][j] == 0) {
+                        if (l.getRevealed()[i][j] && l.getNeighbours()[i][j] != 0) {
                             g.setColor(Color.BLACK);
-                            g.setFont(new Font("Tahoma", Font.BOLD, 30));
-                            g.drawString("" + l.getNeighbours()[i][j], i * 56 + 3 * spacing + 13, j * 56 + 56 + 16);
-                        } else if (l.getMines()[i][j] == 1) {
-                            g.fillRect(i * 56 + 10 + 16, j * 56 + 56 - 16, 20, 40);
-                            g.fillRect(i * 56 + 16, j * 56 + 56 + 10 - 16, 40, 20);
-                            g.fillRect(i * 56 + 5 + 16, j * 56 + 56 + 5 - 16, 30, 30);
+                            if (l.getMines()[i][j] == 0) {
+                                g.setColor(Color.BLACK);
+                                g.setFont(new Font("Tahoma", Font.BOLD, 30));
+                                g.drawString("" + l.getNeighbours()[i][j], i * 56 + 3 * spacing + 13, j * 56 + 56 + 16);
+                            } else if (l.getMines()[i][j] == 1) {
+                                g.fillRect(i * 56 + 10 + 16, j * 56 + 56 - 16, 20, 40);
+                                g.fillRect(i * 56 + 16, j * 56 + 56 + 10 - 16, 40, 20);
+                                g.fillRect(i * 56 + 5 + 16, j * 56 + 56 + 5 - 16, 30, 30);
+                            }
                         }
-                    }
 
-                    if (l.getFlagged()[i][j]) {
-                        g.setColor(Color.BLACK);
-                        g.fillRect(i * 56 + 10 + 16, j * 56 + 56 - 16, 3, 40);
-                        g.setColor(Color.WHITE);
-                        g.fillRect(i * 56 + 10 + 16 + 3, j * 56 + 56 - 16, 18, 12);
+                        if (l.getFlagged()[i][j]) {
+                            g.setColor(Color.BLACK);
+                            g.fillRect(i * 56 + 10 + 16, j * 56 + 56 - 16, 3, 40);
+                            g.setColor(Color.WHITE);
+                            g.fillRect(i * 56 + 10 + 16 + 3, j * 56 + 56 - 16, 18, 12);
+                        }
                     }
                 }
+            } else {
+                if (l.isDefeat()) {
+                    g.setColor(Color.RED);
+                    g.setFont(new Font("Arial", Font.PLAIN, 80));
+                    g.drawString("Hävisit", 300, 300);
+                } else {
+                    g.setColor(Color.GREEN);
+                    g.setFont(new Font("Arial", Font.PLAIN, 80));
+                    g.drawString("Voitit", 345, 300);
+                }
             }
-
             g.setColor(Color.cyan);
             g.fillRect(smileyX, 0, 35, 35);
             g.setColor(Color.BLACK);
@@ -105,16 +119,24 @@ public class GUI extends JFrame {
                 g.drawString("xd", smileyX + 7, smileyY);
             }
 
-            if (!(l.isDefeat() || l.isVictory())) {
+            if (!l.isDefeat() && !l.isVictory()) {
                 secs = (new Date().getTime() - l.getstartingTime().getTime()) / 1000;
             }
 
             g.setColor(Color.WHITE);
             g.drawString("" + secs, timerX, timerY);
-
         }
     }
 
+    /**
+     * Returns the X-index that corresponds with the mouse's current
+     * whereabouts. If the mouse is not within the boundaries of any particular
+     * box, returns -1.
+     *
+     *
+     * @return an integer between -1 and 15, that is used as an index value to
+     * access the contents of a table.
+     */
     public int inBoxX() {
         for (int i = 0; i < 16; i++) {
             for (int j = 0; j < 9; j++) {
@@ -130,6 +152,15 @@ public class GUI extends JFrame {
         return -1;
     }
 
+    /**
+     * Returns the Y-index that corresponds with the mouse's current
+     * whereabouts. If the mouse is not within the boundaries of any particular
+     * box, returns -1.
+     *
+     *
+     * @return an integer between -1 and 8, that is used as an index value to
+     * access the contents of a table.
+     */
     public int inBoxY() {
         for (int i = 0; i < 16; i++) {
             for (int j = 0; j < 9; j++) {
@@ -145,9 +176,19 @@ public class GUI extends JFrame {
         return -1;
     }
 
+    /**
+     * A class that handles the mouse button presses within the frame.
+     */
     public class Click implements MouseListener {
 
         @Override
+        /**
+         * Handles each click that happens within the frame.
+         *
+         * Depending on the type and location of the click, either sets a box as
+         * revealed, flags it, resets the game or does nothing.
+         *
+         */
         public void mouseClicked(MouseEvent me) {
             int x = inBoxX();
             int y = inBoxY();
@@ -156,18 +197,15 @@ public class GUI extends JFrame {
                 l = new Logic();
             }
 
-            if (me.getButton() == MouseEvent.BUTTON1 && x != -1 && y != -1 && !l.getFlagged()[x][y]) {
-                l.setBoxRevealed(inBoxX(), inBoxY());
-            }
+            if (!l.isDefeat() && !l.isVictory()) {
+                if (me.getButton() == MouseEvent.BUTTON1 && x != -1 && y != -1 && !l.getFlagged()[x][y]) {
+                    l.setBoxRevealed(inBoxX(), inBoxY());
+                }
 
-            if (me.getButton() == MouseEvent.BUTTON3 && x != -1 && y != -1 && !l.getRevealed()[x][y]) {
-                l.setBoxFlagged(x, y);
+                if (me.getButton() == MouseEvent.BUTTON3 && x != -1 && y != -1 && !l.getRevealed()[x][y]) {
+                    l.setBoxFlagged(x, y);
+                }
             }
-
-//            if (x != -1 && y != -1) {
-//                System.out.println("the mouse is in a box [" + x + "][" + y + "]");
-//                System.out.println("number of mine neighbours this box has is: " + l.getNeighbours()[x][y]);
-//            }
         }
 
         @Override
@@ -188,14 +226,22 @@ public class GUI extends JFrame {
 
     }
 
+    /**
+     * A class that provides methods to keep track of the coordinates of the
+     * mouse.
+     *
+     */
     public class Move implements MouseMotionListener {
 
         @Override
         public void mouseDragged(MouseEvent me) {
-
         }
 
         @Override
+        /**
+         * Moving the mouse updates the private variables mouse x (mx) and mouse
+         * y (my).
+         */
         public void mouseMoved(MouseEvent me) {
             mx = me.getX();
             my = me.getY();

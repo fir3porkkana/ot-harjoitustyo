@@ -38,6 +38,12 @@ Komennolla
 `mvn package`
 voi generoida target-hakemistoon jar-tiedoston nimeltä Miinaharava-1.0-SNAPSHOT.jar.
 
+### JavaDoc
+
+Komennolla
+`mvn javadoc:javadoc`
+saa generoitua JavaDocin. Sitä voi tarkastella avaamalla tiedosto target/site/apidocs/index.html selaimella
+
 ### Checkstyle
 
 Checkstyle -tarkistukset [(määritelty tässä tiedostossa)](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/Miinaharava/checkstyle.xml) suoritetaan komennolla 

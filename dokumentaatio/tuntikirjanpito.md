@@ -11,4 +11,7 @@ päivä | aika | mitä tein
 23.4 | 1 | sovelluslogiikkaa
 24.4 | 2 | sovelluslogiikkaa
 26.4 | 3 | käyttöohje, readme
-yhteensä | 27.5 |
+30.4 | 2 | sovelluslogiikka
+2.5 | 2.5 | javadocceja
+4.5 | 2 | testausta
+yhteensä | 32 |

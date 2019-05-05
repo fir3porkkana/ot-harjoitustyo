@@ -25,13 +25,8 @@ miinaharava itsessään, eli pelin perustoiminnallisuus:
 
 ### Ei-niin tähdellisiä jatkokehitysideoita
 
-* mahdollisuus valita kentän koko
-
 * mahdollisuus aloittaa peli uudestaan
 
 * ilmoitus hävitystä pelistä
 
-* pisteytys voitetulle pelille
-
-* high-scorejen tallettaminen yksinkertaiseen tietokantaan
-
+* yksinkertainen pisteytys voitetulle pelille (ajastus)
