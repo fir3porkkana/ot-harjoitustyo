@@ -31,4 +31,4 @@ Sovellus on haettu ja sitä on testattu manuaalisesti [käyttöohjeen](https://g
 
 ## Laatuongelmat, jotka sovellukseen jäivät
 
-
+Jo-toteutetussa toiminnallisuudessa ei ilmennyt ongelmia, mutta ohjelman rakenteeseen ja toteutustapaan jäi parantamisen varaa. Rakenteesta lisää [arkkitehtuurisivulla.](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
