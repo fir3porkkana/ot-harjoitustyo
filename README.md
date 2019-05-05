@@ -2,8 +2,8 @@
 Miinaharava on klassinen peli, jossa tarkoituksena on annetun informaation perusteella päätella laudalla olevien miinojen sijainti. Käyttäjä voittaa pelin, kun kaikki miinat on merkitty ja loput ruudut on paljastettu. Häviö tulee, jos pelaaja erehtyy painamaan ruutua, jossa on miina.
 
 #### Dokumentaatio
- 
-[suoritettavissa oleva mainin koodi](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/Miinaharava/src/main/java/src/Main.java)
+
+**[viimeisin release - loppupalautus](https://github.com/fir3porkkana/ot-harjoitustyo/releases/tag/1.02)**
 
 [testausdokumentti](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/dokumentaatio/testaus.md)
 
