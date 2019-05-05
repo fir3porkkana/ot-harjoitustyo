@@ -5,7 +5,7 @@ Miinaharava on klassinen peli, jossa tarkoituksena on annetun informaation perus
  
 [suoritettavissa oleva mainin koodi](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/Miinaharava/src/main/java/src/Main.java)
 
-[testejä](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/Miinaharava/src/test/java/LogicTest.java)
+[testausdokumentti](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/dokumentaatio/testaus.md)
 
 [käyttöohje](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
 
