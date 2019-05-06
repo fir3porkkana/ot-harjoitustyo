@@ -5,6 +5,8 @@ Miinaharava on klassinen peli, jossa tarkoituksena on annetun informaation perus
 
 **[viimeisin release - loppupalautus](https://github.com/fir3porkkana/ot-harjoitustyo/releases/tag/1.02)**
 
+[loppupalautus, but it's easier to actually play](https://github.com/fir3porkkana/ot-harjoitustyo/releases/tag/1.02.1)
+
 [testausdokumentti](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/dokumentaatio/testaus.md)
 
 [käyttöohje](https://github.com/fir3porkkana/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
